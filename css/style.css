@@ -1,0 +1,58 @@
+@import url("https://fonts.googleapis.com/css2?family=Familjen+Grotesk:wght@400;600;700&family=Montserrat:wght@700;800;900&family=Roboto:ital,wght@0,900;1,300;1,400;1,700;1,900&family=Signika+Negative:wght@400;700&display=swap");
+:root {
+  --gray: var(--gray);
+}
+
+body {
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  line-height: 1.5rem;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+.display-4 {
+  color: var(--dark);
+  font-weight: 700;
+}
+
+.navbar .nav-link {
+  font-size: 14px;
+  font-weight: 700;
+}
+
+.Hero {
+  background-image: url(/images/aleks-dorohovich-nJdwUHmaY8A-unsplash.jpg);
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+  position: relative;
+  z-index: 2;
+}
+.Hero::after {
+  content: "";
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: rgba(21, 20, 51, 0.5);
+  z-index: -1;
+}
+section {
+  padding-top: 120px;
+  padding-bottom: 120px;
+}
+.row {
+  width: 100%;
+}
+.card-img-top circle {
+  border-radius: 50px;
+}
+p {
+  font-size: small;
+  margin-top: 20px;
+}
